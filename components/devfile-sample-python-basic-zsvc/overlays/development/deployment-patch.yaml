@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-zsvc
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/build-e2e-aczo-tenant/test-app-pson/devfile-sample-python-basic-zsvc@sha256:a586491fcbe4d4b1b2d7bb380cce844f5816a913a351b4c239687f4e010a9c93
+        name: my-python
+        resources: {}
+status: {}
